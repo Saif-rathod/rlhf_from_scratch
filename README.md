@@ -1,10 +1,10 @@
-# 🧠 Reinforcement Learning from Human Feedback (RLHF) with GPT-2
+#  Reinforcement Learning from Human Feedback (RLHF) from Scratch!
 
 This repository demonstrates how to align a pretrained language model (GPT-2) using **Reinforcement Learning from Human Feedback (RLHF)**, implemented through a series of Jupyter notebooks.
 
 ---
 
-## 📌 Overview
+##  Overview
 
 **Reinforcement Learning from Human Feedback (RLHF)** is a technique for training large language models (LLMs) like GPT-2 or GPT-3 to better align with human preferences. Instead of using direct feedback from an environment, RLHF involves:
 
@@ -16,7 +16,7 @@ A **reward model** is trained to imitate human preferences (e.g., ranking model 
 
 ---
 
-## 💬 Example Use Case
+##  Example Use Case
 
 Suppose you're building a chatbot:
 
@@ -29,19 +29,19 @@ Suppose you're building a chatbot:
 
 ---
 
-## ✅ This Repository's Implementation
+##  This Repository's Implementation
 
 This project adapts RLHF to train GPT-2 to generate **positively sentimented sentences**, using the [`stanfordnlp/sst2`](https://huggingface.co/datasets/sst2) dataset — a collection of movie review sentences labeled as positive or negative.
 
-### 🎯 Objective
+###  Objective
 
 Use RLHF to train GPT-2 to generate **only** positive sentiment text.
 
 ---
 
-## 📓 Notebooks Breakdown
+##  Notebooks Breakdown
 
-### 1. `1-SFT.ipynb` – Supervised Fine-Tuning
+### 1. `SFT.ipynb` – Supervised Fine-Tuning
 
 - Fine-tune GPT-2 using SST-2 dataset (positive/negative labeled sentences).
 - Objective: Train GPT-2 to generate realistic sentences similar to the dataset.
@@ -49,7 +49,7 @@ Use RLHF to train GPT-2 to generate **only** positive sentiment text.
 
 ---
 
-### 2. `2-RM Training.ipynb` – Reward Model Training
+### 2. `RM.ipynb` – Reward Model Training
 
 - Add a reward (classification) head to GPT-2.
 - Train the model to classify sentiment (positive vs. negative).
@@ -57,7 +57,7 @@ Use RLHF to train GPT-2 to generate **only** positive sentiment text.
 
 ---
 
-### 3. `3-RLHF.ipynb` – PPO Reinforcement Learning
+### 3. `RLHF.ipynb` – PPO Reinforcement Learning
 
 - **Sampling**: Use the SFT model to generate sentences.
 - **Scoring**: Use the reward model to assign sentiment scores.
