@@ -31,7 +31,7 @@ Suppose you're building a chatbot:
 
 ##  This Repository's Implementation
 
-This project adapts RLHF to train GPT-2 to generate **positively sentimented sentences**, using the [`stanfordnlp/sst2`](https://huggingface.co/datasets/sst2) dataset — a collection of movie review sentences labeled as positive or negative.
+This project adapts RLHF to train GPT-2 to generate **positively sentimented sentences**, using the [`stanfordnlp/sst2`](https://huggingface.co/datasets/stanfordnlp/sst2) dataset — a collection of movie review sentences labeled as positive or negative.
 
 ###  Objective
 
